@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://pressly.app',
+  site: 'https://juvania.app',
   integrations: [tailwind(), sitemap()]
 });

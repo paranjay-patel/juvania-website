@@ -82,7 +82,7 @@ import DownloadApp from '../sections/DownloadApp.astro';
 import FAQ from '../sections/FAQ.astro';
 ---
 
-<Layout title="Pressly - Premium On-Demand Doorstep Ironing">
+<Layout title="Juvania - Premium On-Demand Doorstep Ironing">
 	<Hero />
 	<HowItWorks />
 	<WhyChooseUs />

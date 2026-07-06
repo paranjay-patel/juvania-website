@@ -12,23 +12,23 @@ interface Props {
 
 const { 
 	title, 
-	description = "Pressly - Professional on-demand doorstep ironing services. Schedule a pickup, count your clothes at the door, and track delivery in real time.",
+	description = "Juvania - Professional on-demand doorstep ironing services. Schedule a pickup, count your clothes at the door, and track delivery in real time.",
 	image = "/og-image.png",
 	schema
 } = Astro.props;
 
 // Construct full URLs using the configured site domain
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://pressly.app');
-const socialImageURL = new URL(image, Astro.site || 'https://pressly.app');
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://juvania.app');
+const socialImageURL = new URL(image, Astro.site || 'https://juvania.app');
 
 // Default Schema if none provided
 const defaultSchema = JSON.stringify({
 	"@context": "https://schema.org",
 	"@type": "LocalBusiness",
-	"name": "Pressly",
+	"name": "Juvania",
 	"image": socialImageURL.toString(),
 	"description": description,
-	"url": "https://pressly.app",
+	"url": "https://juvania.app",
 	"priceRange": "$",
 	"address": {
 		"@type": "PostalAddress",
@@ -213,7 +213,7 @@ const defaultSchema = JSON.stringify({
 				</div>
 			</div>
 			<div class="max-w-7xl mx-auto px-6 border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-sm">
-				<p>&copy; {new Date().getFullYear()} Pressly Inc. All rights reserved.</p>
+				<p>&copy; {new Date().getFullYear()} Juvania Inc. All rights reserved.</p>
 				<div class="flex items-center gap-6 text-slate-500">
 					<a href="#" aria-label="Twitter" class="p-3 -m-3 hover:text-primary transition-colors"><XIcon class="w-5 h-5" /></a>
 					<a href="#" aria-label="Instagram" class="p-3 -m-3 hover:text-primary transition-colors"><InstagramIcon class="w-5 h-5" /></a>

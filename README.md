@@ -1,46 +1,46 @@
-# Astro Starter Kit: Basics
+<div align="center">
+  <h1>🌍 Juvania Marketing Website</h1>
+  <p><em>The beautiful, lightning-fast landing page that introduces the world to Juvania.</em></p>
+</div>
 
-```sh
-npm create astro@latest -- --template basics
+---
+
+## 🚀 Overview
+The **Juvania Website** is the public face of the platform. Built with **Astro**, it ships zero JavaScript by default, resulting in a perfectly optimized, lightning-fast, SEO-friendly landing page that converts visitors into active users and vendors.
+
+## ✨ Core Features
+- **⚡ Blazing Fast Performance:** Powered by Astro's island architecture.
+- **🎨 Premium Aesthetic:** Split-screen layouts, glassmorphism hero sections, and Bento grid layouts that rival top-tier SaaS platforms.
+- **📱 Responsive Design:** Flawless experience across desktop, tablet, and mobile browsers.
+- **🔍 SEO Optimized:** Automatic sitemap generation and perfectly structured semantic HTML.
+
+## 🛠️ Tech Stack
+- **Framework:** Astro
+- **Styling:** TailwindCSS
+- **Icons:** Lucide Astro
+- **Deployment:** Vercel/Netlify Ready
+
+## 💻 Quick Start
+
+### 1. Installation
+```bash
+$ npm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+### 2. Running the Site
+Start the Astro development server:
+```bash
+$ npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Open [http://localhost:4321](http://localhost:4321) to see the live site.
 
-## 🧞 Commands
+### 3. Build for Production
+```bash
+$ npm run build
+```
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+<div align="center">
+  <sub>Built with ❤️ for the Juvania Platform</sub>
+</div>
