@@ -1,0 +1,364 @@
+
+> website@0.0.1 dev
+> astro dev --verbose
+
+2026-06-28T03:58:49.758Z astro:cli --verbose flag enabled! Enabling: DEBUG="astro:*,vite:*"
+2026-06-28T03:58:49.758Z astro:cli Tip: Set the DEBUG env variable directly for more control. Example: "DEBUG=astro:*,vite:* astro build".
+2026-06-28T03:58:49.969Z astro:telemetry [notify] last notified on 1764077271320
+2026-06-28T03:58:50.379Z astro:telemetry {
+  context: {
+    isGit: true,
+    anonymousProjectId: '47bc37d93c884613edc8aee05216ff5140201aaae0dad81b7cd3a17a37383560',
+    packageManager: 'npm',
+    packageManagerVersion: '10.8.2',
+    anonymousId: 'f829359a207288c8ffc82e6a1c1a0ecfec4ceaf769c0a70c33a6e03c78e8048e',
+    anonymousSessionId: '936f85ab0e650200b8f8fad00e39896af3ee9ca235c558f44b6f9ebeb6f8f7b0'
+  },
+  meta: {
+    nodeVersion: '20.20.2',
+    viteVersion: '5.4.21',
+    astroVersion: '4.16.19',
+    systemPlatform: 'darwin',
+    systemRelease: '25.5.0',
+    systemArchitecture: 'arm64',
+    cpuCount: 10,
+    cpuModel: 'Apple M4',
+    cpuSpeed: 2400,
+    memoryInMb: 16384,
+    isDocker: false,
+    isTTY: undefined,
+    isWSL: false,
+    isCI: false,
+    ciName: null
+  }
+}
+2026-06-28T03:58:50.379Z astro:telemetry [
+  {
+    "eventName": "ASTRO_CLI_SESSION_STARTED",
+    "payload": {
+      "cliCommand": "dev",
+      "config": {
+        "integrations": [
+          "@astrojs/tailwind",
+          "@astrojs/react"
+        ],
+        "build": {},
+        "server": true,
+        "image": {},
+        "markdown": {},
+        "experimental": {},
+        "legacy": {}
+      }
+    }
+  }
+]
+09:28:50 [types] Generated 0ms
+2026-06-28T03:58:50.409Z vite:config using resolved config: {
+  configFile: undefined,
+  cacheDir: '/Users/paranjay/Development/pressly/pressly-website/node_modules/.vite',
+  clearScreen: false,
+  customLogger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  appType: 'custom',
+  optimizeDeps: {
+    holdUntilCrawlEnd: true,
+    entries: [
+      '/Users/paranjay/Development/pressly/pressly-website/src/**/*.{jsx,tsx,vue,svelte,html,astro}'
+    ],
+    exclude: [ 'astro', 'node-fetch' ],
+    include: [
+      '@astrojs/react/client.js',
+      'react',
+      'react-dom',
+      'react/jsx-dev-runtime',
+      'react/jsx-runtime',
+      'astro > cssesc',
+      'astro > aria-query',
+      'astro > axobject-query'
+    ],
+    rolldownOptions: { transform: [Object] },
+    esbuildOptions: { preserveSymlinks: false }
+  },
+  plugins: [
+    'vite:optimized-deps',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'astro:build',
+    'astro:markdown',
+    'astro:jsx',
+    'astro:head-metadata',
+    'astro-content-virtual-mod-plugin',
+    'astro:content-asset-propagation',
+    'astro:assets:esm',
+    'astro:vite-plugin-file-url',
+    'astro:i18n',
+    'astro:actions',
+    'astro:container',
+    'vite:react-babel',
+    'vite:react-refresh-fbm',
+    'vite:react-refresh',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'astro:build:normal',
+    'astro:scripts',
+    'astro:server',
+    'astro:html',
+    'astro:postprocess',
+    'astro:integration-container',
+    'astro:content-imports',
+    '@astro/plugin-middleware',
+    'astro:assets',
+    'astro:prefetch',
+    'astro:transitions',
+    'astro:dev-toolbar',
+    '@astro/plugin-actions',
+    'vite:react:refresh-wrapper',
+    'vite:react-virtual-preamble',
+    '@astrojs/react:opts',
+    '@astrojs/react:environment',
+    'vite:wasm-fallback',
+    'astro:vite-plugin-env',
+    'vite:define',
+    'vite:css-post',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'astro:scripts:page-ssr',
+    'astro:scanner',
+    '@astrojs/vite-plugin-astro-ssr-manifest',
+    'vite:react:config-post',
+    'vite:client-inject',
+    'vite:css-analysis',
+    'vite:import-analysis'
+  ],
+  publicDir: '/Users/paranjay/Development/pressly/pressly-website/public',
+  root: '/Users/paranjay/Development/pressly/pressly-website',
+  envPrefix: 'PUBLIC_',
+  define: {
+    'import.meta.env.SITE': 'undefined',
+    'import.meta.env.BASE_URL': '"/"',
+    'import.meta.env.ASSETS_PREFIX': 'undefined',
+    __ASTRO_INTERNAL_I18N_CONFIG__: '{"base":"/","format":"directory","trailingSlash":"ignore","isBuild":false}'
+  },
+  server: {
+    preTransformRequests: true,
+    hmr: undefined,
+    watch: { ignored: undefined },
+    host: false,
+    open: false,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    middlewareMode: false,
+    fs: {
+      strict: true,
+      allow: [Array],
+      deny: [Array],
+      cachedChecks: undefined
+    }
+  },
+  resolve: {
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'astro' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'astro' ],
+    preserveSymlinks: false,
+    alias: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  },
+  ssr: {
+    target: 'node',
+    noExternal: [
+      'astro',
+      'astro/components',
+      '@nanostores/preact',
+      '@fontsource/*',
+      '@astrojs/internal-helpers',
+      '@astrojs/react',
+      '@astrojs/tailwind',
+      '@mui/material',
+      '@mui/base',
+      '@babel/runtime',
+      'use-immer',
+      '@material-tailwind/react'
+    ],
+    external: [
+      'prismjs/components/index.js',
+      'string-width',
+      'cssesc',
+      '@vitejs/plugin-react',
+      'devalue',
+      'picomatch',
+      'postcss-load-config',
+      'ultrahtml'
+    ],
+    optimizeDeps: { noDiscovery: true, esbuildOptions: [Object] }
+  },
+  build: {
+    target: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    cssTarget: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    outDir: 'dist',
+    assetsDir: '_astro',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    rollupOptions: { onwarn: [Function: onwarn] },
+    minify: 'esbuild',
+    terserOptions: {},
+    write: true,
+    emptyOutDir: null,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssr: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    commonjsOptions: { include: [Array], extensions: [Array] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [Array] },
+    modulePreload: { polyfill: true },
+    cssMinify: true
+  },
+  css: { postcss: { plugins: [Array] }, lightningcss: undefined },
+  mode: 'development',
+  oxc: {
+    jsx: { runtime: 'automatic', importSource: undefined, refresh: true },
+    jsxRefreshInclude: /\.[tj]sx?(?:\?.*)?$/,
+    jsxRefreshExclude: /\/node_modules\//
+  },
+  configFileDependencies: [],
+  inlineConfig: {
+    configFile: false,
+    cacheDir: '/Users/paranjay/Development/pressly/pressly-website/node_modules/.vite/',
+    clearScreen: false,
+    customLogger: {
+      hasWarned: false,
+      info: [Function: info],
+      warn: [Function: warn],
+      warnOnce: [Function: warnOnce],
+      error: [Function: error],
+      clearScreen: [Function: clearScreen],
+      hasErrorLogged: [Function: hasErrorLogged]
+    },
+    appType: 'custom',
+    optimizeDeps: { entries: [Array], exclude: [Array], include: [Array] },
+    plugins: [
+      null,     false,    [Array],   [Object],
+      [Object], [Object], undefined, [Object],
+      [Object], [Object], [Object],  [Object],
+      [Object], [Object], [Object],  [Object],
+      [Array],  [Object], [Object],  [Object],
+      [Array],  [Object], [Object],  [Object],
+      [Object], [Object], [Object],  [Object],
+      false,    [Object], [Object],  [Object],
+      [Object], [Object], [Object],  [Object],
+      [Object], [Object]
+    ],
+    publicDir: '/Users/paranjay/Development/pressly/pressly-website/public/',
+    root: '/Users/paranjay/Development/pressly/pressly-website/',
+    envPrefix: 'PUBLIC_',
+    define: {
+      'import.meta.env.SITE': 'undefined',
+      'import.meta.env.BASE_URL': '"/"',
+      'import.meta.env.ASSETS_PREFIX': 'undefined'
+    },
+    server: { hmr: undefined, watch: [Object], host: false, open: false },
+    resolve: { alias: [Array], conditions: [Array], dedupe: [Array] },
+    ssr: { noExternal: [Array], external: [Array] },
+    build: { assetsDir: '_astro' },
+    css: { postcss: [Object] },
+    mode: 'development'
+  },
+  base: '/',
+  decodedBase: '/',
+  rawBase: '/',
+  command: 'serve',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: false,
+  esbuild: { jsxDev: true },
+  preview: {
+    port: undefined,
+    strictPort: undefined,
+    host: false,
+    allowedHosts: undefined,
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: undefined,
+    headers: undefined
+  },
+  envDir: '/Users/paranjay/Development/pressly/pressly-website',
+  env: { BASE_URL: '/', MODE: 'development', DEV: true, PROD: false },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_/Users/paranjay/Development/pressly/pressly-website' => {
+      dir: '/Users/paranjay/Development/pressly/pressly-website',
+      data: [Object],
+      hasSideEffects: [Function: hasSideEffects],
+      webResolvedImports: {},
+      nodeResolvedImports: {},
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  createResolver: [Function: createResolver],
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  webSocketToken: '5aFt8RgDEGwR',
+  additionalAllowedHosts: [],
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks]
+}
+2026-06-28T03:58:50.420Z vite:resolve 1.21ms astro/assets/endpoint/node -> /Users/paranjay/Development/pressly/pressly-website/node_modules/astro/dist/assets/endpoint/node.js
+2026-06-28T03:58:50.423Z vite:deps Hash is consistent. Skipping. Use --force to override.
+09:28:50 [vite] Port 4321 is in use, trying another one...
+09:28:50 [vite] Port 4322 is in use, trying another one...
+09:28:50 [vite] Port 4323 is in use, trying another one...
+
+ astro  v4.16.19 ready in 262 ms
+
+┃ Local    http://localhost:4324/
+┃ Network  use --host to expose
+
+2026-06-28T03:58:50.426Z astro:content Watching src/content/ for changes
+2026-06-28T03:58:50.429Z astro:content Types generated
+09:28:50 watching for file changes...
+2026-06-28T03:58:50.543Z vite:hmr [file change] .astro/astro/content.d.ts
+2026-06-28T03:58:50.543Z vite:hmr [no modules matched] .astro/astro/content.d.ts

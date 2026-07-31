@@ -1,70 +1,46 @@
-# Pressly Marketing Website & Portal
-
-Pressly is a modern marketplace platform built to connect households with local ironing and laundry professionals in Surat, Gujarat. This repository contains the high-performance, responsive marketing website, customer landing page, and vendor onboarding portal.
-
----
-
-## 🛠️ Tech Stack & Design System
-* **Framework:** [Astro v4+](https://astro.build/) - High-performance content-focused web framework.
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/) - Responsive, utility-first CSS framework.
-* **Icons:** [Lucide Astro](https://lucide.dev/) - Modern and clean SVG icon pack.
-* **Aesthetics:**
-  * **Spinning Glow Borders:** Multi-colored conic gradient animations on key Call-To-Action (CTA) elements ("Download App", "Become Vendor").
-  * **Frosted Glass Header:** Sticky navigation header with `backdrop-blur-md` for visual unity during scrolling.
-  * **Interactive About Page Story:** Hover-responsive cards with colorful red/yellow/green accentuation representing the *Broken System*, *Realization*, and *Solution*.
-  * **Subtle Bento Grid backgrounds:** Customized CSS radial masks (`mask-image`) spotlighting the top headers of major section viewports.
+<div align="center">
+  <h1>🌍 Juvania Marketing Website</h1>
+  <p><em>The beautiful, lightning-fast landing page that introduces the world to Juvania.</em></p>
+</div>
 
 ---
 
-## 📂 Project Structure
+## 🚀 Overview
+The **Juvania Website** is the public face of the platform. Built with **Astro**, it ships zero JavaScript by default, resulting in a perfectly optimized, lightning-fast, SEO-friendly landing page that converts visitors into active users and vendors.
 
-```text
-/
-├── public/               # Static assets (Favicons, logos, images)
-└── src/
-    ├── components/       # Reusable UI fragments (Logo, floating decorative elements)
-    ├── layouts/          # Page wrappers (Layout.astro - houses global Header, Footer, SEO meta tags)
-    ├── pages/            # View routes (Static pages map 1:1 with file names)
-    │   ├── index.astro   # Main Homepage
-    │   ├── about.astro   # About Us Page
-    │   ├── faq.astro     # FAQ Page
-    │   ├── contact.astro # Contact & Support Form Page
-    │   ├── vendor.astro  # Partner onboarding portal
-    │   └── 404.astro     # Custom Error 404 page
-    └── sections/         # Page-specific sections
-        ├── about/        # Sections for About Page (Hero, Timeline, Mission, Story)
-        ├── contact/      # Sections for Contact Page
-        ├── faq/          # Sections for FAQ Page
-        ├── vendor/       # Sections for Vendor Page
-        └── ...           # Homepage sections (Hero, Problem, Benefits, NearbyServices, HowItWorks)
-```
+## ✨ Core Features
+- **⚡ Blazing Fast Performance:** Powered by Astro's island architecture.
+- **🎨 Premium Aesthetic:** Split-screen layouts, glassmorphism hero sections, and Bento grid layouts that rival top-tier SaaS platforms.
+- **📱 Responsive Design:** Flawless experience across desktop, tablet, and mobile browsers.
+- **🔍 SEO Optimized:** Automatic sitemap generation and perfectly structured semantic HTML.
 
----
+## 🛠️ Tech Stack
+- **Framework:** Astro
+- **Styling:** TailwindCSS
+- **Icons:** Lucide Astro
+- **Deployment:** Vercel/Netlify Ready
 
-## 🧞 Scripts & Local Development
+## 💻 Quick Start
 
-All commands should be executed from the project root directory:
-
+### 1. Installation
 ```bash
-# 1. Install local dependencies
-npm install
+$ npm install
+```
 
-# 2. Start local development server (launches at http://localhost:4321)
-npm run dev
+### 2. Running the Site
+Start the Astro development server:
+```bash
+$ npm run dev
+```
 
-# 3. Build optimized production assets (outputs to /dist)
-npm run build
+Open [http://localhost:4321](http://localhost:4321) to see the live site.
 
-# 4. Preview the local production build locally
-npm run preview
+### 3. Build for Production
+```bash
+$ npm run build
 ```
 
 ---
-
-## 📋 Pre-Launch & Deployment Checklist
-
-Refer to the local `TODO.md` file for a detailed list of tasks required prior to domain mapping and production server deployment, including:
-* Setting up Cloudflare Web Analytics tokens.
-* Mapping custom production domain canonical variables in `astro.config.mjs`.
-* Swapping standard favicon placeholders with brand icons.
-* Verifying Firebase and Razorpay webhook configurations.
+<div align="center">
+  <sub>Built with ❤️ for the Juvania Platform</sub>
+</div>
