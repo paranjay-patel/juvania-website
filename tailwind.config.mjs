@@ -8,6 +8,7 @@ export default {
 			fontFamily: {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
 				display: ['Outfit', ...defaultTheme.fontFamily.sans],
+				poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
 				primary: '#0284C7',
