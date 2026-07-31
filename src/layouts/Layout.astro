@@ -18,8 +18,8 @@ const {
 } = Astro.props;
 
 // Construct full URLs using the configured site domain
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://juvania.app');
-const socialImageURL = new URL(image, Astro.site || 'https://juvania.app');
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://juvania.in');
+const socialImageURL = new URL(image, Astro.site || 'https://juvania.in');
 
 // Default Schema if none provided
 const defaultSchema = JSON.stringify({
@@ -28,7 +28,7 @@ const defaultSchema = JSON.stringify({
 	"name": "Juvania",
 	"image": socialImageURL.toString(),
 	"description": description,
-	"url": "https://juvania.app",
+	"url": "https://juvania.in",
 	"priceRange": "$",
 	"address": {
 		"@type": "PostalAddress",
